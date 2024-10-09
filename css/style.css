@@ -1,0 +1,82 @@
+:root {
+    /* Declaramos las variables de color y tipografia*/
+    --blanco: hsl(0, 0%, 100%);
+    --gris300: hsl(212, 45%, 89%);
+    --gris500: hsl(216, 15%, 48%);
+    --gris900: hsl(218, 44%, 22%);
+
+    --fuente: "Outfit", sans-serif;
+
+}
+
+html {
+    /* Mejoramos la consistencia de la web y facilitamos el uso del rem */
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: var(--gris300);
+    font-family: var(--fuente);
+    margin: 0;
+    padding: 0;
+
+
+    display: flex;/* De esta manera centramos el contenido en el body */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+
+    padding: 0 1rem 0 1rem;
+
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.sub {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--gris500);
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2.8rem;
+    width: 23rem;
+    padding: 1rem 1rem 3rem 1rem;
+    border-radius: 1.8rem;
+
+
+    background: var(--blanco);
+    box-shadow: 0px 5px 10px 0px var(--gris300);
+}
+
+img {
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
